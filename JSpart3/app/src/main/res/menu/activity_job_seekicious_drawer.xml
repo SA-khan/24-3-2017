@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/myprofile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@mipmap/favorite"
+            android:title="My Favourite" />
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@mipmap/subscrption"
+            android:title="My Subscription" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:title="Inbox"
+            android:icon="@mipmap/ic_inbox_black_24dp"/>
+        <item
+            android:id="@+id/nav_cv"
+            android:icon="@mipmap/cv"
+            android:title="My CV" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@mipmap/aboutus"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/signout"
+            android:title="Log out" />
+    </group>
+</menu>

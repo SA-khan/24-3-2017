@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/_chat_mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:titleTextColor="#ffffff"
+        android:background="@color/colorPrimaryDark">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@id/_chat_mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/userTo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Send To: "
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/userFrom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="From: "
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+        <MultiAutoCompleteTextView
+            android:id="@+id/AddMessage"
+            android:gravity="start"
+            android:padding="5dp"
+            android:hint="Write Text Here"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" />
+        <Button
+            android:id="@+id/SendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Send Message" />
+    </LinearLayout>
+
+</RelativeLayout>

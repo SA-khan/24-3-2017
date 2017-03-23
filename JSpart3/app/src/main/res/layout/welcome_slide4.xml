@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/welcome_slide4_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/overcast"
+        android:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/welcome_slide4_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/logo1">
+        <LinearLayout
+            android:layout_marginTop="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@color/background_color">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and condition:"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:gravity="start"
+                android:ems="13"
+                />
+
+            <TextView
+                android:background="@drawable/shadow"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/dusty"
+                android:text="Terms And Condition"
+                android:textAlignment="textStart"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:ems="10"
+                android:id="@+id/sAgreement"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_weight="0.60" />
+
+            <CheckBox
+                android:id="@+id/sAgreementClicked"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="I accepted the terms and conditions of this application."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
